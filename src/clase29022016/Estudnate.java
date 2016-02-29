@@ -16,7 +16,7 @@ public class Estudnate {
     private String apellido;
     private String codigo;
     private Curso[] cursos;
-    private double nota;
+    public double nota;
   
     
     public Estudnate(String nombre, String apellido, String codigo) {
@@ -55,6 +55,10 @@ public class Estudnate {
     public String getCodigo() {
         return codigo;
     }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
     
     public double calcularPromedio(){
         double promedio = 0;
@@ -64,10 +68,6 @@ public class Estudnate {
         }
         promedio = promedio/this.cursos.length;
         return promedio;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public Curso[] getCursos() {
