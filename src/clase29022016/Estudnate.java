@@ -17,6 +17,7 @@ public class Estudnate {
     private String codigo;
     private Curso[] cursos;
     private double nota;
+  
     
     public Estudnate(String nombre, String apellido, String codigo) {
         this.cursos = new Curso[5];
@@ -38,16 +39,17 @@ public class Estudnate {
         return apellido;
     }
     
+    
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
     public double getNota() {
         return nota;
     }
     
     public void setNota(){
         this.nota = nota;
-    }
-    
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getCodigo() {
